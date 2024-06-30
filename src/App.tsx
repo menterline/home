@@ -4,6 +4,7 @@ import { AppBar } from "./components/AppBar";
 import Content from "./components/Content";
 
 import { createTheme } from "@mui/material/styles";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const theme = createTheme({
   palette: {
@@ -15,11 +16,24 @@ const theme = createTheme({
     },
   },
 });
+function Projects() {
+  return <h2>Projects</h2>;
+}
+
+function Blog() {
+  return <h2>Blog</h2>;
+}
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <AppBar />
-      <Content />
+      <Router>
+        <AppBar />
+        <Routes>
+          <Route path="/home" element={<Content />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+      </Router>
     </ThemeProvider>
   );
 }
