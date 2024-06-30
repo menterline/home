@@ -1,6 +1,6 @@
 export function AboutMe() {
   return (
-    <>
+    <div className="flex flex-col gap-8">
       <h1 className="text-2xl fond-bold">About Me</h1>
       <p>
         I am an experienced software engineer comfortable at working in all
@@ -30,6 +30,6 @@ export function AboutMe() {
         Outside of work, I enjoy running, watching Formula 1, NFL, and Soccer,
         spending time with my family, and playing video games.
       </p>
-    </>
+    </div>
   );
 }

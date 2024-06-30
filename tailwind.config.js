@@ -4,13 +4,23 @@ export default {
   theme: {
     extend: {
       keyframes: {
-        slideInFromBottom: {
-          "0%": { transform: "translateY(100%)", opacity: 0 },
-          "100%": { transform: "translateY(0)", opacity: 1 },
+        expand: {
+          "0%": { transform: "scaleY(0)", opacity: "0" },
+          "100%": { transform: "scaleY(1)", opacity: "1" },
+        },
+        expandDown: {
+          "0%": { transform: "scaleY(0)", opacity: "0" },
+          "100%": { transform: "scaleY(1)", opacity: "1" },
+        },
+        collapseUp: {
+          "0%": { transform: "scaleY(1)", opacity: "1" },
+          "100%": { transform: "scaleY(0)", opacity: "0" },
         },
       },
       animation: {
-        slideInFromBottom: "slideInFromBottom 0.5s ease-out",
+        expand: "expand 0.5s ease-out forwards",
+        expandDown: "expandDown 0.5s ease-out forwards",
+        collapseUp: "collapseUp 0.5s ease-out forwards",
       },
     },
   },
