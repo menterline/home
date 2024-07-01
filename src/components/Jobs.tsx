@@ -20,7 +20,7 @@ export function Jobs(props: Props) {
             </div>
             <h1 className="text-xl">{job.title}</h1>
             <div className="hidden group-hover:flex flex-col gap-4">
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out group-hover:animate-expandDown origin-top">
+              <div className="opacity-0 group-hover:opacity-100 transition-opacity ease-in-out group-hover:animate-expandDown origin-top">
                 {job.description && <div>{job.description}</div>}
                 {job.bullets && job.bullets.length > 0 && (
                   <ul>
@@ -40,6 +40,7 @@ export function Jobs(props: Props) {
           </div>
         </div>
       ))}
+      <div className="md:h-80"></div>
     </div>
   );
 }

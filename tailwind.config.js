@@ -18,7 +18,6 @@ export default {
         },
       },
       animation: {
-        expand: "expand 0.5s ease-out forwards",
         expandDown: "expandDown 0.5s ease-out forwards",
         collapseUp: "collapseUp 0.5s ease-out forwards",
       },

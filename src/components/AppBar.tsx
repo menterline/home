@@ -40,7 +40,7 @@ export const AppBar = () => {
           color="inherit"
           sx={{ mr: 4 }}
         >
-          Experience
+          Home
         </Button>
         <Button
           variant="text"
@@ -63,7 +63,7 @@ export const AppBar = () => {
   };
 
   return (
-    <MuiAppBar position="static" sx={{ backgroundColor: "#003566" }}>
+    <MuiAppBar position="fixed" sx={{ backgroundColor: "#003566" }}>
       <Toolbar>{isSmallDevice ? <SmallDevice /> : <NonSmallDevice />}</Toolbar>
     </MuiAppBar>
   );

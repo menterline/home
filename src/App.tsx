@@ -17,22 +17,26 @@ const theme = createTheme({
   },
 });
 function Projects() {
-  return <h2>Projects</h2>;
+  return (
+    <h2 className="text-2xl text-center mt-8">Projects... Coming Soon!</h2>
+  );
 }
 
 function Blog() {
-  return <h2>Blog</h2>;
+  return <h2 className="text-2xl text-center mt-8">Blog... Coming Soon!</h2>;
 }
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
         <AppBar />
-        <Routes>
-          <Route path="/home" element={<Content />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/blog" element={<Blog />} />
-        </Routes>
+        <div className="mt-12">
+          <Routes>
+            <Route path="/home" element={<Content />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
+        </div>
       </Router>
     </ThemeProvider>
   );
