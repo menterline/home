@@ -15,7 +15,7 @@ export function Jobs(props: Props) {
         <div className="border-2 border-transparent border-solid hover:border-gray-300 rounded-lg p-4 flex flex-col gap-4 text-gray-400 hover:text-gray-300 transition-colors duration-1000 group">
           <div className="">
             <div className="flex flex-col lg:flex-row justify-between items-baseline">
-              <h1 className="text-2xl">{job.company}</h1>
+              <h1 className="text-2xl max-w-1/2">{job.company}</h1>
               <span>{getDateString(job.startDate, job.endDate)}</span>
             </div>
             <h1 className="text-xl">{job.title}</h1>

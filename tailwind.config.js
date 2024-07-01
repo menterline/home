@@ -3,13 +3,13 @@ export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      maxWidth: {
+        "1/2": "50%",
+      },
       keyframes: {
-        expand: {
-          "0%": { transform: "scaleY(0)", opacity: "0" },
-          "100%": { transform: "scaleY(1)", opacity: "1" },
-        },
         expandDown: {
           "0%": { transform: "scaleY(0)", opacity: "0" },
+          "50%": { transform: "scaleY(0.5)", opacity: "0.5" },
           "100%": { transform: "scaleY(1)", opacity: "1" },
         },
         collapseUp: {
