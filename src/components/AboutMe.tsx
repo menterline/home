@@ -28,7 +28,8 @@ export function AboutMe() {
       </p>
       <p>
         Outside of work, I enjoy running, watching Formula 1, NFL, and Soccer,
-        spending time with my family, and playing video games.
+        spending time with my family, attempting to learn guitar,and playing
+        video games.
       </p>
     </div>
   );
