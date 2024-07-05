@@ -18,12 +18,12 @@ const theme = createTheme({
 });
 function Projects() {
   return (
-    <h2 className="text-2xl text-center mt-8">Projects... Coming Soon!</h2>
+    <h2 className="text-2xl text-center mt-24">Projects... Coming Soon!</h2>
   );
 }
 
 function Blog() {
-  return <h2 className="text-2xl text-center mt-8">Blog... Coming Soon!</h2>;
+  return <h2 className="text-2xl text-center mt-24">Blog... Coming Soon!</h2>;
 }
 function App() {
   return (
