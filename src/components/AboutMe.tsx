@@ -3,7 +3,7 @@ type Props = {
 };
 export function AboutMe(props: Props) {
   return (
-    <div className={`${props.className} flex flex-col gap-8`}>
+    <section className={`${props.className} flex flex-col gap-8`}>
       <h1 className="text-4xl font-bold text-monokaiBlue">About Me</h1>
       <p>
         I am an experienced software engineer comfortable at working in all
@@ -15,9 +15,9 @@ export function AboutMe(props: Props) {
       <p>
         My experience across the stack means I am comfortable tackling new
         problems, and learning new tools to accomplish the task ahead of me.
-        Though I am primarily focused on UI work at Envestnet, I work closely
-        with the API developers and find my experience very helpful in working
-        together to build the best solution between frontend and backend.
+        Though I lead the UI development on my scrum team, I work closely with
+        the API developers and find my backend and database experience very
+        helpful in working together to build the best solution.
       </p>
       <p>
         I am especially passionate about software architecture and design, as
@@ -31,9 +31,9 @@ export function AboutMe(props: Props) {
       </p>
       <p>
         Outside of work, I enjoy running, watching Formula 1, NFL, and Soccer,
-        spending time with my family, attempting to learn guitar,and playing
+        spending time with my family, attempting to learn guitar, and playing
         video games.
       </p>
-    </div>
+    </section>
   );
 }

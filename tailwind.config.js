@@ -5,7 +5,8 @@ export default {
     extend: {
       colors: {
         monokaiBlue: "#78CEE9",
-        test: "#9CD57B",
+        monokaiGreen: "#9CD57B",
+        monokaiText: "#E1E2E3",
       },
       maxWidth: {
         "1/2": "50%",

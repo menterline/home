@@ -7,7 +7,7 @@ function Content() {
       <div className="flex flex-col gap-16">
         <div className="text-center">
           <h1 className="text-6xl font-bold">Matt Enterline</h1>
-          <li className="ml-8">Software Engineer @ Envestnet</li>
+          <span className="">Full Stack Software Engineer</span>
         </div>
         <div className="flex flex-col lg:flex-row justify-between gap-12 border-t-2 border-t-monokaiBlue pt-2">
           <AboutMe className="w-full lg:w-1/2" />
