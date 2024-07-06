@@ -9,9 +9,9 @@ type Props = {
 export function Experience(props: Props) {
   return (
     <div className={`flex flex-col gap-4 justify-center ${props.className}`}>
-      <div className="flex flex-row justify-between pr-4">
+      <div className="flex flex-col gap-4 md:flex-row justify-between md:pr-4">
         <h1 className="text-4xl font-bold text-monokaiBlue">Experience</h1>
-        <Button variant="contained" color="primary">
+        <Button className="w-fit" variant="contained" color="primary">
           <a href={MyPDF} download="MatthewEnterline-Resume.pdf">
             Download Resume
           </a>
