@@ -5,6 +5,9 @@ import Content from "./components/Content";
 
 import { createTheme } from "@mui/material/styles";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Projects } from "./pages/Projects";
+import { Blog } from "./pages/Blog";
+import { projectsList } from "./assets/projectsList";
 
 const theme = createTheme({
   palette: {
@@ -16,15 +19,6 @@ const theme = createTheme({
     },
   },
 });
-function Projects() {
-  return (
-    <h2 className="text-2xl text-center mt-24">Projects... Coming Soon!</h2>
-  );
-}
-
-function Blog() {
-  return <h2 className="text-2xl text-center mt-24">Blog... Coming Soon!</h2>;
-}
 
 function App() {
   return (
@@ -34,8 +28,11 @@ function App() {
         <div className="mt-12">
           <Routes>
             <Route path="/home" element={<Content />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route
+              path="/home/projects"
+              element={<Projects projects={projectsList} />}
+            />
+            <Route path="/home/blog" element={<Blog />} />
           </Routes>
         </div>
       </Router>

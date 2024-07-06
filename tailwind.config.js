@@ -7,6 +7,7 @@ export default {
         monokaiBlue: "#78CEE9",
         monokaiGreen: "#9CD57B",
         monokaiText: "#E1E2E3",
+        monokaiPurple: "#BAA0F8",
       },
       maxWidth: {
         "1/2": "50%",

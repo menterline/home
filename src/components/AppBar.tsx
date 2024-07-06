@@ -43,14 +43,14 @@ export const AppBar = () => {
           <Button
             variant="text"
             color="inherit"
-            onClick={() => navigate("/projects")}
+            onClick={() => navigate("/home/projects")}
             sx={{ mr: 4 }}
           >
             Projects
           </Button>
           <Button
             variant="text"
-            onClick={() => navigate("/blog")}
+            onClick={() => navigate("/home/blog")}
             color="inherit"
             sx={{ mr: 4 }}
           >
