@@ -10,9 +10,9 @@ const getDateString = (startDate: string, endDate?: string) => {
 export function Jobs(props: Props) {
   const { jobs } = props;
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 border-l-2 border-test">
       {jobs.map((job) => (
-        <div className="border-2 border-transparent border-solid hover:border-gray-300 rounded-lg p-4 flex flex-col gap-4 text-gray-400 hover:text-gray-300 transition-colors duration-1000 group">
+        <div className="border-2 border-transparent border-solid rounded-lg p-4 flex flex-col gap-4 text-gray-400 hover:text-gray-300 transition-colors duration-1000 group relative">
           <div className="">
             <div className="flex flex-col lg:flex-row justify-between items-baseline">
               <h1 className="text-2xl max-w-1/2">{job.company}</h1>
@@ -33,11 +33,12 @@ export function Jobs(props: Props) {
               <div className="flex gap-4 flex-wrap">
                 {job.skills.length > 0 &&
                   job.skills.map((skill) => (
-                    <Chip label={skill} color="primary" variant="outlined" />
+                    <Chip label={skill} color="secondary" variant="outlined" />
                   ))}
               </div>
             </div>
           </div>
+          <li className="absolute -left-3 inset-y-0 text-6xl text-test " />
         </div>
       ))}
       <div className="md:h-80"></div>

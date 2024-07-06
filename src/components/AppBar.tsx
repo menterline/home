@@ -2,7 +2,6 @@ import {
   Button,
   IconButton,
   Toolbar,
-  Typography,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
@@ -31,10 +30,8 @@ export const AppBar = () => {
   const NonSmallDevice = () => {
     return (
       <>
-        <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
-          This page is a work in progress
-        </Typography>
         <Button
+          className="flex"
           variant="text"
           onClick={() => navigate("/home/")}
           color="inherit"
@@ -42,29 +39,33 @@ export const AppBar = () => {
         >
           Home
         </Button>
-        <Button
-          variant="text"
-          color="inherit"
-          onClick={() => navigate("/projects")}
-          sx={{ mr: 4 }}
-        >
-          Projects
-        </Button>
-        <Button
-          variant="text"
-          onClick={() => navigate("/blog")}
-          color="inherit"
-          sx={{ mr: 4 }}
-        >
-          Blog
-        </Button>
+        <div className="flex">
+          <Button
+            variant="text"
+            color="inherit"
+            onClick={() => navigate("/projects")}
+            sx={{ mr: 4 }}
+          >
+            Projects
+          </Button>
+          <Button
+            variant="text"
+            onClick={() => navigate("/blog")}
+            color="inherit"
+            sx={{ mr: 4 }}
+          >
+            Blog
+          </Button>
+        </div>
       </>
     );
   };
 
   return (
-    <MuiAppBar position="fixed" sx={{ backgroundColor: "#003566" }}>
-      <Toolbar>{isSmallDevice ? <SmallDevice /> : <NonSmallDevice />}</Toolbar>
+    <MuiAppBar position="fixed" color="primary">
+      <Toolbar className="flex flex-row justify-between">
+        {isSmallDevice ? <SmallDevice /> : <NonSmallDevice />}
+      </Toolbar>
     </MuiAppBar>
   );
 };

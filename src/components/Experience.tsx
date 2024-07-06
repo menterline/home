@@ -3,12 +3,15 @@ import { Jobs } from "./Jobs";
 import MyPDF from "../../public/MatthewEnterline-Resume.pdf";
 import { Button } from "@mui/material";
 
-export function Experience() {
+type Props = {
+  className?: string;
+};
+export function Experience(props: Props) {
   return (
-    <div className="flex flex-col gap-4 justify-center">
-      <div className="flex flex-col gap-2 items-center">
-        <h1 className="text-xl underline">Experience</h1>
-        <Button variant="outlined" sx={{ backgroundColor: "#003566" }}>
+    <div className={`flex flex-col gap-4 justify-center ${props.className}`}>
+      <div className="flex flex-row justify-between pr-4">
+        <h1 className="text-4xl font-bold text-monokaiBlue">Experience</h1>
+        <Button variant="contained" color="primary">
           <a href={MyPDF} download="MatthewEnterline-Resume.pdf">
             Download Resume
           </a>

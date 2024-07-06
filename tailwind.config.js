@@ -3,6 +3,10 @@ export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        monokaiBlue: "#78CEE9",
+        test: "#9CD57B",
+      },
       maxWidth: {
         "1/2": "50%",
       },

@@ -1,7 +1,7 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Arial, system-ui, Avenir, Helvetica, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-scrollbar {
     display:none;
   }
@@ -9,8 +9,8 @@
   scrollbar-width: none;  /* Firefox */
 
 
-  color:#e5e5e5; 
-  background-color:#14213d;
+  color:#E1E2E3; 
+  background-color:#273136;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

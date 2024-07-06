@@ -1,7 +1,10 @@
-export function AboutMe() {
+type Props = {
+  className?: string;
+};
+export function AboutMe(props: Props) {
   return (
-    <div className="flex flex-col gap-8">
-      <h1 className="text-2xl fond-bold">About Me</h1>
+    <div className={`${props.className} flex flex-col gap-8`}>
+      <h1 className="text-4xl font-bold text-monokaiBlue">About Me</h1>
       <p>
         I am an experienced software engineer comfortable at working in all
         levels of the stack. From my roots in chemical engineering and building

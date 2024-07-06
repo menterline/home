@@ -14,7 +14,15 @@ export const jobsList: Job[] = [
       "Enhancing Typescript support by aligning strong types with API code",
       "Member of SDLC Task force to enable better agile practices",
     ],
-    skills: ["ReactJS", "NextJS"],
+    skills: [
+      "ReactJS",
+      "NextJS",
+      "TailwindCSS",
+      "TypeScript",
+      "Jest",
+      "React Testing Library",
+      "Redux",
+    ],
   },
   {
     company: "Cargas Systems",
@@ -23,7 +31,15 @@ export const jobsList: Job[] = [
     endDate: "January 2022",
     description:
       "I was a full stack developer at Cargas Systems, where I worked on the devliery and service software, Cargas Energy.  While there, I spearheaded an initiative to build a unit testing suite for the UI - where previously there was none.  I developed a tiered pricing module to enable dynamic pricing for customers, as well as a text message service with a Twilio integration",
-    skills: ["ReactJS", "SQL Server", "jQuery", "CSS", "Twilio Administration"],
+    skills: [
+      "ReactJS",
+      "SQL Server",
+      "TypeScript",
+      "Jest",
+      "jQuery",
+      "CSS",
+      "Twilio Administration",
+    ],
   },
   {
     company: "Confluence, Inc.",
