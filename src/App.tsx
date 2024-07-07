@@ -18,6 +18,15 @@ const theme = createTheme({
       main: "#78CEE9",
     },
   },
+  components: {
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          background: "#354157",
+        },
+      },
+    },
+  },
 });
 
 function App() {

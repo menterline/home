@@ -1,6 +1,6 @@
 import { jobsList } from "../assets/jobsList";
 import { Jobs } from "./Jobs";
-import MyPDF from "../../public/MatthewEnterline-Resume.pdf";
+import MyPDF from "../assets/MatthewEnterline-Resume.pdf";
 import { Button } from "@mui/material";
 
 type Props = {
