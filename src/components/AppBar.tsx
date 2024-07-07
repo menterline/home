@@ -17,10 +17,6 @@ export const AppBar = () => {
 
   const navItems: Array<{ name: string; path: string }> = [
     {
-      name: "Home",
-      path: "/home",
-    },
-    {
       name: "Projects",
       path: "/home/projects",
     },
@@ -43,27 +39,27 @@ export const AppBar = () => {
     );
   };
   const NonSmallDevice = () => {
-    const appBarItems = navItems;
-    const homeLink = appBarItems[0];
+    const homeLink = {
+      name: "Home",
+      path: "/home",
+    };
     console.log(homeLink);
     return (
-      <div className="flex flex-row justify-between">
+      <>
         {homeLink && (
-          <div>
-            <Button
-              key={homeLink.name}
-              className="flex"
-              variant="text"
-              onClick={() => navigate(homeLink.path)}
-              color="inherit"
-              sx={{ mr: 4 }}
-            >
-              {homeLink?.name}
-            </Button>
-          </div>
+          <Button
+            key={homeLink.name}
+            className="flex"
+            variant="text"
+            onClick={() => navigate(homeLink.path)}
+            color="inherit"
+            sx={{ mr: 4 }}
+          >
+            {homeLink?.name}
+          </Button>
         )}
-        <div>
-          {[...appBarItems.slice(1)].map(({ name, path }) => (
+        <div className="flex">
+          {navItems.map(({ name, path }) => (
             <Button
               key={name}
               className="flex"
@@ -76,13 +72,13 @@ export const AppBar = () => {
             </Button>
           ))}
         </div>
-      </div>
+      </>
     );
   };
 
   return (
     <MuiAppBar position="fixed" color="primary">
-      <Toolbar className="flex flex-row justify-end">
+      <Toolbar className="flex flex-row justify-between">
         {isSmallDevice ? <SmallDevice /> : <NonSmallDevice />}
       </Toolbar>
     </MuiAppBar>
