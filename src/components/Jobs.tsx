@@ -12,7 +12,10 @@ export function Jobs(props: Props) {
   return (
     <div className="flex flex-col gap-4 border-l-2 border-monokaiGreen">
       {jobs.map((job) => (
-        <div className="p-4 flex flex-col gap-4 text-gray-400 hover:text-monokaiText transition-colors duration-500 group relative">
+        <div
+          key={job.company}
+          className="p-4 flex flex-col gap-4 text-gray-400 hover:text-monokaiText transition-colors duration-500 group relative"
+        >
           <div className="">
             <div className="flex flex-col lg:flex-row justify-between items-baseline">
               <h1 className="text-2xl max-w-1/2">{job.company}</h1>
@@ -25,7 +28,9 @@ export function Jobs(props: Props) {
                 {job.bullets && job.bullets.length > 0 && (
                   <ul>
                     {job.bullets?.map((bullet) => (
-                      <li className="list-disc ml-8">{bullet}</li>
+                      <li key={bullet} className="list-disc ml-8">
+                        {bullet}
+                      </li>
                     ))}
                   </ul>
                 )}
@@ -33,7 +38,12 @@ export function Jobs(props: Props) {
               <div className="flex gap-4 flex-wrap">
                 {job.skills.length > 0 &&
                   job.skills.map((skill) => (
-                    <Chip label={skill} color="secondary" variant="outlined" />
+                    <Chip
+                      key={skill}
+                      label={skill}
+                      color="secondary"
+                      variant="outlined"
+                    />
                   ))}
               </div>
             </div>
