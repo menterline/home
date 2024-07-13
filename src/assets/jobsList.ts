@@ -8,7 +8,7 @@ export const jobsList: Job[] = [
     title: "Software Engineer - UI Team Lead",
     startDate: "January 2022",
     description:
-      "I am a UI development team lead at Envestnet, where our team is building the Next Gen Proposal application.  My greatest areas of focus are ensuring code quality through thorough reviews and building a robust test suite, while providing maximum value to our clients in using our software",
+      "I am a UI development team lead at Envestnet, where our team is building the Next Gen Proposal application.  We are using React, and CSS-in-JS solutions to build the application.  Additionally, we are utilizing an in-house component library and storybook for consistency across all of UI development.  My greatest areas of focus are ensuring code quality through thorough reviews and building a robust test suite, while providing maximum value to our clients in using our software",
     bullets: [
       "Practicing test-driven development with Jest and React Testing Library",
       "Enhancing Typescript support by aligning strong types with API code",
@@ -22,6 +22,8 @@ export const jobsList: Job[] = [
       "Jest",
       "React Testing Library",
       "Redux",
+      "Storybook",
+      "Component Library",
     ],
   },
   {
@@ -47,7 +49,7 @@ export const jobsList: Job[] = [
     startDate: "July 2017",
     endDate: "November 2019",
     description:
-      "I Built end-to-end desktop financial reporting applications with Winforms and WPF.  These applications are used by some of the largest global fund managers.  My time at Confluence solidified my view on the importance of unit tests, and automated testing in general.",
+      "I built end-to-end desktop financial reporting applications with Winforms and WPF.  These applications are used by some of the largest global fund managers.  My time at Confluence solidified my view on the importance of unit tests, and automated testing in general.",
     bullets: [
       "Applications built in C# / .NET",
       "Strong Object Oriented principles applied to enable maximum test coverage and adherance to SOLID principles",

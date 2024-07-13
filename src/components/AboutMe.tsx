@@ -23,14 +23,15 @@ export function AboutMe(props: Props) {
         I am especially passionate about software architecture and design, as
         well as automated testing. I believe that these concepts go hand in hand
         - as I have found in my career that 'testable' code is 'beautiful' code
-        that was designed well. Furthermore, the cognitive load decrease that
-        covering edge cases in automated tests frees the developer to invest in
-        deep refactoring while maintaining confidence that the system will stay
-        stable. For more of my thoughts on this, and other topics (to come),
-        please see the blog section
+        that was designed well, and easy to extend and maintain. Furthermore,
+        the cognitive load decrease that comes from covering edge cases in
+        automated tests frees the developer to invest in deep refactoring while
+        maintaining confidence that the system will stay stable. For more of my
+        thoughts on this, and other topics (to come), please see the blog
+        section
       </p>
       <p>
-        Outside of work, I enjoy running, watching Formula 1, NFL, and Soccer,
+        Outside of work, I enjoy running, watching Formula 1, NFL, and soccer,
         spending time with my family, attempting to learn guitar, and playing
         video games.
       </p>
