@@ -5,6 +5,7 @@ export type Project = {
   description: string;
   link: string;
   skills?: string[];
+  workInProgress?: boolean;
 };
 
 type Props = {
