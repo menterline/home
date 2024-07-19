@@ -2,15 +2,16 @@ import { Project } from "../pages/Projects";
 
 export const projectsList: Project[] = [
   {
-    name: "Spotify-Stats",
+    name: "AudioInsights",
     description:
-      "I have been a Spotify user since it was invite only in US, and it is the first application I install on a new computer.  Furthermore, spotify-wrapped - Spotify's year-end overview of your listening habits is always so insightful, and surprises me with my most played artists and songs.  By tapping into the Spotify API, I am building an application to view this data at any time, and provide recommendations or other data insights on your listening behavior.  My goal with this project is to further utilize Tailwind, as well as learning HeadlessUI, and using react-query to make calls to the Spotify API.  Evnetually, I plan on writing a GraphQL service as a wrapper around the spotify API, simplifying this UI into fewer API calls itself.",
+      "I have been a Spotify user since it was invite only in US, and it is the first application I install on a new computer.  Furthermore, spotify-wrapped - Spotify's year-end overview of your listening habits is always so insightful, and surprises me with my most played artists and songs.  By tapping into the Spotify API, I am building an application to view this data at any time, and provide recommendations or other data insights on your listening behavior.  My goal with this project is to further utilize Tailwind, as well as learning HeadlessUI, and using react-query to make calls to the Spotify API.  Evnetually, I plan on writing a GraphQL service as a proxy service and wrapper around the spotify API, simplifying this UI into fewer API calls itself.  Note that because this app is still in development mode in spotify, it is not available for general use for all users.  If needed, I am happy to demo with my credentials.",
     link: "https://menterline.github.io/spotify-stats/",
     skills: [
       "React",
       "Typescript",
       "TailwindCSS",
       "HeadlessUI",
+      "RadixUI",
       "Spotify API",
       "react-query",
     ],
