@@ -10,7 +10,7 @@ function Content() {
         <div className="text-center flex flex-col">
           <h1 className="text-6xl font-bold">Matt Enterline</h1>
           <div className="">Full Stack Software Engineer</div>
-          <div className="flex flex-row gap-16  text-monokaiBlue">
+          <div className="flex flex-row gap-16 justify-center text-monokaiBlue">
             <a
               className="underline"
               href="https://github.com/menterline"
