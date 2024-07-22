@@ -1,9 +1,6 @@
-type Props = {
-  className?: string;
-};
-export function AboutMe(props: Props) {
+export function AboutMe() {
   return (
-    <section className={`${props.className} flex flex-col gap-8`}>
+    <div className="flex flex-col gap-8">
       <h1 className="text-4xl font-bold text-monokaiBlue">About Me</h1>
       <p>
         I am an experienced software engineer comfortable at working in all
@@ -35,6 +32,6 @@ export function AboutMe(props: Props) {
         spending time with my family, attempting to learn guitar, and playing
         video games.
       </p>
-    </section>
+    </div>
   );
 }
