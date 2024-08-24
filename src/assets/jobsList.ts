@@ -11,8 +11,10 @@ export const jobsList: Job[] = [
       "I am a UI development team lead at Envestnet, where our team is building the Next Gen Proposal application.  We are using React, and CSS-in-JS solutions to build the application.  Additionally, we are utilizing an in-house component library and storybook for consistency across all of UI development.  My greatest areas of focus are ensuring code quality through thorough reviews and building a robust test suite, while providing maximum value to our clients in using our software",
     bullets: [
       "Practicing test-driven development with Jest and React Testing Library",
-      "Enhancing Typescript support by aligning strong types with API code",
-      "Member of SDLC Task force to enable better agile practices",
+      "Leading redesign efforts of complex system to build custom investment models",
+      "Leading effort to integrate team's application into new platform",
+      "Led high visibility and high impact project for major React version upgrade",
+      "Leading scrum team of UI developers in DesignServices, unit testing, and code reviews",
     ],
     skills: [
       "ReactJS",
