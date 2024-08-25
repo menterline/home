@@ -36,7 +36,7 @@ function App() {
         <AppBar />
         <div className="mt-12">
           <Routes>
-            <Route path="/home" element={<Content />} />
+            <Route path="/" element={<Content />} />
             <Route
               path="/home/projects"
               element={<Projects projects={projectsList} />}

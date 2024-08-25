@@ -24,7 +24,7 @@ export const AppBar = () => {
 
   const homeLink = {
     name: "Home",
-    path: "/home/",
+    path: "/",
   };
   const navItems: Array<{ name: string; path: string }> = [
     {
