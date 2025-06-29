@@ -3,10 +3,37 @@ import { Job } from "../types/Job";
 Eventually this will be pulled from an API
 */
 export const jobsList: Job[] = [
+{
+    company: "PODS",
+    title: "Senior Software Engineer, Tech Lead",
+    startDate: "September 2025",
+    description:
+      "I am a Senior Software Engineer and Tech Lead on the post-booking team at PODS.  With a tech stack of a ReactJS frontend and Kotlin spring boot microservices deployed on Azure, my team builds MyPODS - the customer portal to monitor deliveries, make payments, and view documents.",
+    bullets: [
+      "Leading team through company wide initiative to migrate legacy backend systems, while delivering new features",
+      "Owning authentication services to validate and authorize users across the entire pods.com domain",
+      "Integrate our services with multiple upstream services such as Logik.io, Salesforce, Azure blob storage, and Braintree.",
+      "Practicing test-driven development with Jest and React Testing Library, and Kotlin spring boot",
+      "Provide technical leadership in project planning to take business tasks into technical requirements.",
+      "Leading scrum team of full stack developers in design, development, unit testing, and code reviews",
+    ],
+    skills: [
+      "ReactJS",
+      "Kotlin",
+      "Spring Boot",
+      "TypeScript",
+      "Azure",
+      "Authentication",
+      "Mockk",
+      "React Testing Library",
+      "React Query",
+    ],
+  },
   {
     company: "Envestnet",
     title: "Software Engineer - UI Team Lead",
     startDate: "January 2022",
+    endDate: "September 2025",
     description:
       "I am a UI development team lead at Envestnet, where our team is building the Next Gen Proposal application.  We are using React, and CSS-in-JS solutions to build the application.  Additionally, we are utilizing an in-house component library and storybook for consistency across all of UI development.  My greatest areas of focus are ensuring code quality through thorough reviews and building a robust test suite, while providing maximum value to our clients in using our software",
     bullets: [

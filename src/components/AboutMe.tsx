@@ -12,9 +12,9 @@ export function AboutMe() {
       <p>
         My experience across the stack means I am comfortable tackling new
         problems, and learning new tools to accomplish the task ahead of me.
-        Though I lead the UI development on my scrum team, I work closely with
-        the API developers and find my backend and database experience very
-        helpful in working together to build the best solution.
+        I enjoy working on problems in a new domain, and that require learning new tools 
+        or with a different team to find the most effective solution.  With my broad 
+        experieince, I have many past experieinces from which I can draw to solve the issue at hand.
       </p>
       <p>
         I am especially passionate about software architecture and design, as

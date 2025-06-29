@@ -1,2 +1,0 @@
-theme from https://user-images.githubusercontent.com/58662350/214389154-bf7f0e74-e746-4970-915e-1e4e1d3bcd48.png
-deploy with npm run deploy
